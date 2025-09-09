@@ -1,6 +1,9 @@
-import React from "react";
+import { useParams } from "react-router";
+import { useEffect, useState } from "react";
 
 function HomePage() {
+  if (!client) return <p>Loading...</p>;
+
   return (
     <>
       <section className="title">
